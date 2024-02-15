@@ -1,0 +1,181 @@
+% Resume in Latex
+% Author : Taimur Hasan 
+% Based off of: https://github.com/sb2nov/resume
+% license : mit
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+%sans-serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Taimur Hasan} \\ \vspace{1pt}
+    \small 661-802-8782$|$ \href{mailto:work@tshasan.com}{\underline{work@tshasan.com}} $|$ 
+    \href{https://www.linkedin.com/in/taimurhasan1/}{\underline{linkedin.com/taimurhasan}} $|$
+    \href{https://github.com/tshasan}{\underline{github.com/tshasan}}
+\end{center}
+
+%------OBJECTIVE-----------
+\section{Objective}
+An internship or research opportunity that will allow me to utilize my problem solving skills and attention to detail to further develop my abilities in the field of computer science. With the aim to contribute innovative solutions and grow professionally in the tech industry.
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University Monterey Bay}{Seaside, CA}
+      {Bachelor of Science in Computer Science, Minor in Software Engineering}{Expected Graduation: May 2025}
+      \resumeItemListStart
+        \item{\textbf{Relevant Coursework:}}
+        \begin{itemize}
+          \item CST 338: Software Design
+          \item CST 363: Database Structures
+          \item CST 238: Introduction to Data Structures
+          \item CST 300: Major ProSeminar
+        \end{itemize}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Member}{McDonald's, Stevenson Ranch,CA}
+      {Customer Service and Team Coordination}{April 2020 - August 2020}
+      \resumeItemListStart
+        \resumeItem{Enhanced communication and teamwork, foundational for collaborative development in tech projects.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Sales Associate}{Target, Valencia,CA}
+      {Customer Interaction and Inventory Management}{August 2021- December 2021}
+      \resumeItemListStart
+        \resumeItem{Developed organizational skills, crucial for managing frontend project components and deadlines.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Personal Website} $|$ \emph{Astro Web Framework, GitHub, Cloudflare pages, TailwindCSS, Three.js}}{http://tshasan.com}
+          \resumeItemListStart
+            \resumeItem{Constructed a personal portfolio and blog using the Astro web framework, showcasing CI/CD practices with GitHub Actions and Cloudflare Pages for automatic deployment. Styled using TailwindCSS and integrated Three.js for interactive 3D elements.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Reddit Sentiment Analyzer} $|$ \emph{Reddit API, Python, SciPy, Plotly}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a sentiment analysis tool leveraging the Reddit API to fetch posts and comments, applied natural language processing (NLP) techniques for sentiment analysis using SciPy, and visualized trends over time with Plotly, facilitating insights into public opinion on various topics.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Audio Visualizer} $|$ \emph{Python, pyo, pygame}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented an audio visualizer in Python with real-time sound processing using pyo and graphical display with pygame, offering an interactive experience that visualizes audio frequencies and amplitudes through dynamic visual patterns.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Private Email Server} $|$ \emph{Oracle VM, thasan.com domain}}{}
+          \resumeItemListStart
+            \resumeItem{Set up a secure, private email server on Oracle VM, utilizing the thasan.com domain for personal encrypted communications, enhancing privacy and data security.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (MySQL), JavaScript, HTML/CSS, LaTeX} \\
+     \textbf{Frameworks}{: Node.js, Sveltekit, Flask, JUnit, WordPress, Daisy UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Datagrip, VIM, Sublime} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Plotly, pyo, pygame}
+    }}
+ \end{itemize}
+
+\end{document}
+
